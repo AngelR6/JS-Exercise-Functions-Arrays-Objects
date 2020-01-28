@@ -62,14 +62,12 @@ function makePersonObject(param1, param2, param3) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(param1, param2, param3) {
-  const name = {
-    id: param1,    
-    name: param2,
-    email: param3,
+function getName(name) {
+  let person = {
+    name: 'Luke'
   }
-  return 'hello my name is ' + name[1];
-}
+  return `Hello, my name is ${person.name}`
+};
 
 /**
  * ### Challenge `makeSmartPerson`
@@ -84,13 +82,9 @@ function getName(param1, param2, param3) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(param1){
+
 }
-
-
-
-
 
 /*
 // ⭐️ Example Test Data ⭐️
